@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Poppins:wght@300;400;700&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #6700ee;
+
+  a {
+    color: white;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  .logo {
+    color: #00f7ff;
+    font-weight: bold;
+  }
+  ul {
+    display: flex;
+
+    a {
+      display: block;
+      padding: 0 1em;
+    }
+  }
+}
+
+.social-header,
+.hero-design {
+  display: none;
+}
+
+.content {
+  background: #6700ee;
+  text-align: left;
+  padding: 4em;
+}
+
+.hero {
+  color: WHITE;
+  display: grid;
+  text-align: center;
+}
+
+.meet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+  color: #ff64cb;
+}
+
+.chevron {
+  width: 40px;
+}
+
+.sub2 {
+  display: flex;
+  gap: 1rem;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.destaque {
+  position: relative;
+}
+
+.destaque::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #e5d5fa;
+  top: 0;
+  left: 0;
+  right: 2cm;
+  z-index: -1;
+}
+
+.subtitulo {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6e00ff;
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
+}
+
+.destaque-titulo {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -0.4em;
+  display: block;
+}
+
+.destaque-desc {
+  color: #3b3b3b;
+  margin-top: 3em;
+  font-size: 0.85em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+img.skills-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.skills {
+  background: #ff64cb;
+}
+
+.skills-container ul li {
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+
+  .icone-container {
+    height: 100px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+
+    &.one {
+      width: 50px;
+    }
+    &.two {
+      width: 100px;
+    }
+    &.three {
+      width: 60px;
+    }
+  }
+}
+
+.skills-tittle {
+  font-weight: bold;
+}
+
+.destaque-desc {
+  margin-bottom: 2em;
+}
+
+.portfolio {
+  background: #f7f7f7;
+}
+
+.portfolio-container3 a img {
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+  .destaque,
+  .portfolio {
+    text-align: left;
+  }
+  .destaque,
+  .imgproject,
+  .portfolio-container3 {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  .left,
+  .portfolio-esquerda {
+    display: grid;
+    place-content: center;
+  }
+
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+
+  .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  .portfolio {
+    padding-top: 7em;
+  }
+
+  .portfolio-container3 img {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .nav-container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+
+    header {
+      background: #6700ee;
+    }
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 4em;
+  }
+
+  .social-header {
+    display: block;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 7em;
+      float: right;
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  .hero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 66% auto;
+    padding: 0;
+
+    .content {
+      background: #6e00ff;
+      padding: 6em 8em 6em 4em;
+      text-align: left;
+
+      h1 {
+        font-size: 3em;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  .meet {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: 23.3rem;
+    width: 100%;
+  }
+
+  .portfolio img {
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min_width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 10em 2em 0;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min_width: 1550px) {
+  header {
+    padding: 2em 2em 2em 20em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0;
+  }
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+  .hero .content {
+    padding: 9em 20em 6em 20em;
+  }
+}
